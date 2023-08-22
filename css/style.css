@@ -37,6 +37,7 @@ header {
   align-items: center;
   justify-content: center;
   transition: 0.5s ease;
+  z-index: 5;
 }
 header .header-container {
   width: 100%;
@@ -46,6 +47,7 @@ header .header-container {
   background-color: #fff;
   padding: 10px 20px;
   border-radius: 10px;
+  z-index: 5;
 }
 header .header-container .logo {
   width: 100px;
