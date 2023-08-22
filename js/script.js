@@ -9,12 +9,16 @@ window.addEventListener("scroll", function () {
     header.style.paddingBottom = "5px";
     header.style.boxShadow = boxShadowValue;
     headerContainer.style.boxShadow = ""
+    headerContainer.style.paddingLeft = "0px";
+    headerContainer.style.paddingRight = "0px";
   } else {
     header.style.backgroundColor = "#f6f7f9";
     header.style.paddingTop = "15px";
     header.style.paddingBottom = "15px";
     header.style.boxShadow = ""
     headerContainer.style.boxShadow = boxShadowValue;
+    headerContainer.style.paddingLeft = "20px";
+    headerContainer.style.paddingRight = "20px";
   }
 });
 
@@ -126,6 +130,7 @@ let proIntro = document.querySelector('.proIntro');
 
 ScrollReveal().reveal((text), {
 scale: 0.2,
+easing: 'ease-out',
 interval: 500,
 delay: 300,
 reset: true,
