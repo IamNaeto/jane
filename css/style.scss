@@ -74,21 +74,24 @@ header{
 .hero-sec{
     width: 100%;
     background-color: $hero-bg;
-    padding: 100px 5%;
+    padding: 120px 5% 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: 0.5s ease-in;
         .hero-img{
-            width: 35%;
-            border-radius: 20px;
+            width: 40%;
+            border-radius: 10px;
+            height: 500px;
             
                 img{
                     width: 100%;
-                    border-radius: 20px;
+                    border-radius: 10px;
+                    height: 500px;
                 }
         }
         .info{
-            width: 60%;
+            width: 50%;
                 h1{
                     font-size: 70px;
                     letter-spacing: 2px;
@@ -117,6 +120,7 @@ header{
                 .resume{
                     background-color: $btn-bg;
                     color: #fff;
+                    margin-right: 10px;
                 }
                 .buzzme{
                     &:hover{
@@ -134,12 +138,13 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 100px 5%;
+    transition: 0.5s ease-in;
         .about-me{
             width: 50%;
                 h2{
-                    font-size: 40px;
+                    font-size: 55px;
                     font-weight: bold;
-                    margin-bottom: 20px;
+                    margin-bottom: 10px;
                     letter-spacing: 2px;
                     line-height: normal;
                 }
@@ -193,8 +198,10 @@ header{
     justify-content: space-between;
     background-color: $sec-bg4;
     padding: 100px 5%;
+    transition: 0.5s ease-in;
         h1{
-            font-size: 70px;
+            font-size: 55px;
+            font-weight: bold;
             letter-spacing: 2px;
             font-weight: 700;
             margin-bottom: 5px;
@@ -250,10 +257,11 @@ header{
     justify-content: space-between;
     flex-direction: column;
     padding: 100px 5%;
+    transition: 0.5s ease-in;
         h1{
-            font-size: 70px;
+            font-size: 55px;
             letter-spacing: 2px;
-            font-weight: 700;
+            font-weight: bold;
             margin-bottom: 5px;
         }
         h4{
@@ -302,11 +310,14 @@ header{
                             justify-content: space-between;
                             margin-top: 20px;
                                 a{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
                                     font-size: 18px;
                                     line-height: normal;
                                     letter-spacing: 1px;
                                     font-weight: bold;
-                                    width: 100px;
+                                    width: 30%;
                                     border: 2px solid $btn-bg;
                                     background-color: $btn-bg;
                                     color: #fff;
@@ -318,10 +329,23 @@ header{
                                             background-color: transparent;
                                             border: 2px solid $btn-bg;
                                             color: #343e51;
+                                        &:hover .fa{
+                                            color: #343e51;
+                                        }
+                                        }
+                                        .fa{
+                                            color: #fff;
+                                            margin-left: 10px;
+                                            transition: 0.5s ease-in;
                                         }
                                 }
                                 
                         }
+                        }
+
+                        &:hover{
+                            transition: 0.5s ease-in;
+                            box-shadow: 5px 2px 5px hsla(216, 14%, 14%, 0.05);
                         }
                         
                         .img{
@@ -345,17 +369,18 @@ header{
     padding: 100px 5%;
     display: flex;
     justify-content: space-between;
+    transition: 0.5s ease-in;
         .contact-text{
             width: 45%;
                 .fa{
-                    font-size: 50px;
+                    font-size: 70px;
                     color: $btn-bg;
                     margin-bottom: 10px;
                 }
                 h2{
-                    font-size: 50px;
+                    font-size: 55px;
                     letter-spacing: 1px;
-                    font-weight: 700;
+                    font-weight: bold;
                     margin-bottom: 10px;
                     width: 100%;
                     }
@@ -387,6 +412,7 @@ header{
                         button{
                             width: 30%;
                             padding: 1rem;
+                            font-weight: bold;
                             border: 2px solid $btn-bg;
                             border-radius: 5px;
                             background-color: transparent;
@@ -410,6 +436,8 @@ footer{
     width: 100%;
     padding: 30px 5%;
         .rights{
+            font-size: 18px;
+            letter-spacing: 1px;
             font-weight: bold;
         }
 
@@ -420,7 +448,9 @@ footer{
             a{
                 padding: 0 15px;
                 .fa{
-                    display: inline-block;
+                    display: inline-flex;
+                    text-align: center;
+                    font-size: 30px;
                     transition: 0.5s ease-in-out;
                         &:hover{
                     color: $btn-bg;

@@ -71,21 +71,24 @@ header .header-container .nav-links a:hover {
 .hero-sec {
   width: 100%;
   background-color: #f6f7f9;
-  padding: 100px 5%;
+  padding: 120px 5% 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: 0.5s ease-in;
 }
 .hero-sec .hero-img {
-  width: 35%;
-  border-radius: 20px;
+  width: 40%;
+  border-radius: 10px;
+  height: 500px;
 }
 .hero-sec .hero-img img {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 10px;
+  height: 500px;
 }
 .hero-sec .info {
-  width: 60%;
+  width: 50%;
 }
 .hero-sec .info h1 {
   font-size: 70px;
@@ -115,6 +118,7 @@ header .header-container .nav-links a:hover {
 .hero-sec .info .resume {
   background-color: #d16b86;
   color: #fff;
+  margin-right: 10px;
 }
 .hero-sec .info .buzzme:hover {
   background-color: #d16b86;
@@ -128,14 +132,15 @@ header .header-container .nav-links a:hover {
   align-items: center;
   justify-content: space-between;
   padding: 100px 5%;
+  transition: 0.5s ease-in;
 }
 .about .about-me {
   width: 50%;
 }
 .about .about-me h2 {
-  font-size: 40px;
+  font-size: 55px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   letter-spacing: 2px;
   line-height: normal;
 }
@@ -185,9 +190,11 @@ header .header-container .nav-links a:hover {
   justify-content: space-between;
   background-color: #f8f5fb;
   padding: 100px 5%;
+  transition: 0.5s ease-in;
 }
 .service-sec h1 {
-  font-size: 70px;
+  font-size: 55px;
+  font-weight: bold;
   letter-spacing: 2px;
   font-weight: 700;
   margin-bottom: 5px;
@@ -242,11 +249,12 @@ header .header-container .nav-links a:hover {
   justify-content: space-between;
   flex-direction: column;
   padding: 100px 5%;
+  transition: 0.5s ease-in;
 }
 .project h1 {
-  font-size: 70px;
+  font-size: 55px;
   letter-spacing: 2px;
-  font-weight: 700;
+  font-weight: bold;
   margin-bottom: 5px;
 }
 .project h4 {
@@ -299,11 +307,14 @@ header .header-container .nav-links a:hover {
   margin-top: 20px;
 }
 .project .project-container .project-col .text .links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 18px;
   line-height: normal;
   letter-spacing: 1px;
   font-weight: bold;
-  width: 100px;
+  width: 30%;
   border: 2px solid #d16b86;
   background-color: #d16b86;
   color: #fff;
@@ -316,6 +327,18 @@ header .header-container .nav-links a:hover {
   background-color: transparent;
   border: 2px solid #d16b86;
   color: #343e51;
+}
+.project .project-container .project-col .text .links a:hover:hover .fa {
+  color: #343e51;
+}
+.project .project-container .project-col .text .links a .fa {
+  color: #fff;
+  margin-left: 10px;
+  transition: 0.5s ease-in;
+}
+.project .project-container .project-col:hover {
+  transition: 0.5s ease-in;
+  box-shadow: 5px 2px 5px hsla(216, 14%, 14%, 0.05);
 }
 .project .project-container .project-col .img {
   width: 100%;
@@ -334,19 +357,20 @@ header .header-container .nav-links a:hover {
   padding: 100px 5%;
   display: flex;
   justify-content: space-between;
+  transition: 0.5s ease-in;
 }
 .contact .contact-text {
   width: 45%;
 }
 .contact .contact-text .fa {
-  font-size: 50px;
+  font-size: 70px;
   color: #d16b86;
   margin-bottom: 10px;
 }
 .contact .contact-text h2 {
-  font-size: 50px;
+  font-size: 55px;
   letter-spacing: 1px;
-  font-weight: 700;
+  font-weight: bold;
   margin-bottom: 10px;
   width: 100%;
 }
@@ -376,6 +400,7 @@ header .header-container .nav-links a:hover {
 .contact form button {
   width: 30%;
   padding: 1rem;
+  font-weight: bold;
   border: 2px solid #d16b86;
   border-radius: 5px;
   background-color: transparent;
@@ -398,6 +423,8 @@ footer {
   padding: 30px 5%;
 }
 footer .rights {
+  font-size: 18px;
+  letter-spacing: 1px;
   font-weight: bold;
 }
 footer .socials {
@@ -409,7 +436,9 @@ footer .socials a {
   padding: 0 15px;
 }
 footer .socials a .fa {
-  display: inline-block;
+  display: inline-flex;
+  text-align: center;
+  font-size: 30px;
   transition: 0.5s ease-in-out;
 }
 footer .socials a .fa:hover {
