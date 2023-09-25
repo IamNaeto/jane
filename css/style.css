@@ -37,9 +37,10 @@ header {
   align-items: center;
   justify-content: center;
   transition: 0.5s ease;
-  z-index: 5;
+  z-index: 5 !important;
 }
 header .header-container {
+  position: relative;
   width: 100%;
   display: flex;
   align-items: center;
@@ -48,7 +49,7 @@ header .header-container {
   padding: 10px 20px;
   border-radius: 10px;
   transition: 0.5s ease;
-  z-index: 5;
+  z-index: 10 !important;
 }
 header .header-container .logo {
   width: 100px;
@@ -69,6 +70,9 @@ header .header-container .nav-links a {
 header .header-container .nav-links a:hover {
   color: #d16b86;
 }
+header .header-container .hamburger-menu {
+  display: none;
+}
 
 /*hero section styling*/
 .hero-sec {
@@ -81,14 +85,14 @@ header .header-container .nav-links a:hover {
   transition: 0.5s ease-in;
 }
 .hero-sec .hero-img {
-  width: 40%;
+  width: 45%;
   border-radius: 10px;
-  height: 500px;
+  height: 600px;
 }
 .hero-sec .hero-img img {
   width: 100%;
   border-radius: 10px;
-  height: 500px;
+  height: 600px;
 }
 .hero-sec .info {
   width: 50%;
@@ -281,7 +285,7 @@ header .header-container .nav-links a:hover {
 }
 .project .project-container .project-col .text {
   width: 100%;
-  padding: 10%;
+  padding: 5%;
 }
 .project .project-container .project-col .text h2 {
   font-size: 30px;
@@ -366,12 +370,12 @@ header .header-container .nav-links a:hover {
   width: 45%;
 }
 .contact .contact-text .fa {
-  font-size: 70px;
+  font-size: 60px;
   color: #d16b86;
   margin-bottom: 10px;
 }
 .contact .contact-text h2 {
-  font-size: 55px;
+  font-size: 50px;
   letter-spacing: 1px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -390,19 +394,20 @@ header .header-container .nav-links a:hover {
   justify-content: space-between;
   flex-direction: column;
 }
-.contact form input, .contact form textarea {
+.contact form input,
+.contact form textarea {
   width: 100%;
   padding: 1rem;
   outline: none;
   border: none;
   border-radius: 5px;
   margin-bottom: 10px;
-  background-color: #FFF;
+  background-color: #fff;
   font-size: 16px;
 }
 .contact form button {
-  width: 30%;
-  padding: 1rem;
+  width: 50%;
+  padding: 1rem 0.3rem;
   font-weight: bold;
   border: 2px solid #d16b86;
   border-radius: 5px;
@@ -446,4 +451,256 @@ footer .socials a .fa {
 }
 footer .socials a .fa:hover {
   color: #d16b86;
+}
+
+@media screen and (max-width: 1233px) {
+  .hero-sec .hero-img {
+    width: 45%;
+    height: 400px;
+  }
+  .hero-sec .hero-img img {
+    height: 400px;
+  }
+  .hero-sec .info {
+    width: 50%;
+  }
+  .hero-sec .info h1 {
+    font-size: 50px;
+  }
+  .hero-sec .info p {
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 400px;
+    max-width: 300px;
+  }
+  .hero-sec .info a {
+    padding: 0.6rem;
+  }
+  .contact .contact-text {
+    width: 45%;
+  }
+  .contact .contact-text .fa {
+    font-size: 50px;
+  }
+  .contact .contact-text h2 {
+    font-size: 40px;
+  }
+  .contact form {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header {
+    padding: 30px 3%;
+  }
+  .hero-sec {
+    padding: 120px 3% 100px;
+  }
+  .hero-sec .info h1 {
+    font-size: 40px;
+  }
+  .about {
+    padding: 100px 3%;
+  }
+  .about .about-me h2 {
+    font-size: 40px;
+  }
+  .service-sec {
+    padding: 100px 3%;
+  }
+  .service-sec h1 {
+    font-size: 40px;
+  }
+  .service-sec h4 {
+    font-size: 18px;
+  }
+  .service-sec .service-container .service-col .fa {
+    font-size: 30px;
+  }
+  .service-sec .service-container .service-col h3 {
+    font-size: 20px;
+  }
+  .project {
+    padding: 100px 3%;
+  }
+  .project h1 {
+    font-size: 40px;
+  }
+  .project h4 {
+    font-size: 18px;
+  }
+  .project .project-container .project-col .text h2 {
+    font-size: 20px;
+  }
+  .project .project-container .project-col .text h3 {
+    font-size: 16px;
+  }
+  .project .project-container .project-col .text .links a {
+    font-size: 16px;
+    padding: 0.6rem 1rem;
+  }
+  .contact {
+    padding: 100px 3%;
+  }
+  footer {
+    padding: 30px 3%;
+  }
+}
+@media screen and (max-width: 780px) {
+  header .header-container .logo a {
+    font-size: 30px;
+  }
+  header .header-container .hamburger-menu {
+    display: block;
+    height: 40px;
+    width: 50px;
+    position: relative;
+    cursor: pointer;
+    padding: 1rem;
+    z-index: 2;
+  }
+  header .header-container .hamburger-menu .ham-bar {
+    width: 71%;
+    height: 4px;
+    background-color: #d16b86;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.6s, opacity 0.8s, top 0.6s;
+  }
+  header .header-container .hamburger-menu .bar-top {
+    top: 25%;
+  }
+  header .header-container .hamburger-menu .bar-bottom {
+    top: 75%;
+  }
+  header .header-container .hamburger-menu.active .bar-top {
+    transform: translate(-50%, -50%) rotate(-315deg);
+    top: 50%;
+  }
+  header .header-container .hamburger-menu.active .bar-mid {
+    opacity: 0;
+  }
+  header .header-container .hamburger-menu.active .bar-bottom {
+    transform: translate(-50%, -50%) rotate(-225deg);
+    top: 50%;
+  }
+  header .header-container .nav-links {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 55px;
+    right: -120%;
+    height: 290px;
+    width: 100%;
+    transition: right 0.5s;
+    background: #e3a6b6;
+    color: #f1f5fd;
+    box-shadow: 2px 1px 2px #f1f5fd;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    z-index: 0;
+  }
+  header .header-container .nav-links.active {
+    right: 0;
+  }
+  header .header-container .nav-links a {
+    padding: 10px 0;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  header .header-container .nav-links a:nth-child(1) {
+    margin-top: 25px;
+  }
+  header .header-container .nav-links a:hover {
+    color: #fcf4f6 !important;
+  }
+  .hero-sec {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-sec .hero-img {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+  }
+  .hero-sec .hero-img img {
+    width: 100%;
+    height: 500px;
+  }
+  .hero-sec .info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 40px;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .about .about-me {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .about .skills {
+    width: 100%;
+  }
+  .service-sec .service-container {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .service-sec .service-container .service-col {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .project .project-container {
+    margin-bottom: 0;
+    flex-direction: column;
+  }
+  .project .project-container .project-col {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .contact {
+    flex-direction: column;
+  }
+  .contact .contact-text {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .contact .contact-text h2 {
+    max-width: 650px;
+  }
+  .contact form {
+    width: 100%;
+  }
+  footer .rights {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+  footer .socials a {
+    padding: 0 5px;
+  }
+  footer .socials a .fa {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 400px) {
+  footer {
+    flex-direction: column;
+  }
+  footer .rights {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  footer .socials a {
+    padding: 0 15px;
+  }
+  footer .socials a .fa {
+    font-size: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
