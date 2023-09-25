@@ -282,6 +282,7 @@ header {
     letter-spacing: 2px;
     font-weight: 700;
     margin-bottom: 20px;
+    color: $btn-bg;
   }
   .project-container {
     width: 100%;
@@ -721,6 +722,13 @@ footer {
       .project-col {
         width: 100%;
         margin-bottom: 50px;
+        .text {
+          .links {
+             a {
+               width: 40%;
+             }
+           }
+         }
       }
     }
   }
@@ -732,6 +740,7 @@ footer {
       margin-bottom: 50px;
       h2 {
         max-width: 650px;
+        font-size: 35px;
       }
     }
 

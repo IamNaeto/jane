@@ -1,7 +1,7 @@
 /** active header when window scroll down to 100px **/
 const header = document.querySelector("header");
 const headerContainer = document.querySelector(".header-container");
-const boxShadowValue = "0 0 20px hsla(216, 14%, 14%, 0.05)"
+const boxShadowValue = "5px 5px 5px hsla(216, 14%, 14%, 0.05)"
 window.addEventListener("scroll", function () {
   if (window.scrollY > 50) {
     header.style.backgroundColor = "#fff";
