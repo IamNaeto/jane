@@ -81,7 +81,7 @@ header {
       }
     }
     .hamburger-menu {
-        display: none;
+      display: none;
     }
   }
 }
@@ -591,84 +591,84 @@ footer {
 }
 
 @media screen and (max-width: 780px) {
-    header{
-        .header-container{
-            .logo{
-              a {
-                font-size: 30px;
-              }
-            }
-            .hamburger-menu {
-                display: block;
-                height: 40px;
-                width: 50px;
-                position: relative;
-                cursor: pointer;
-                padding: 1rem;
-                z-index: 2;
-                .ham-bar {
-                    width: 71%;
-                    height: 4px;
-                    background-color: $btn-bg;
-                    border-radius: 25px;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    transition: transform .6s, opacity .8s, top .6s;
-                  }
-                  .bar-top {
-                    top: 25%;
-                  }
-                
-                  .bar-bottom {
-                    top: 75%;
-                  }
-                  &.active .bar-top {
-                    transform: translate(-50%, -50%) rotate(-315deg);
-                    top: 50%;
-                  }
-                  &.active .bar-mid {
-                    opacity: 0;
-                  }
-                  &.active .bar-bottom {
-                    transform: translate(-50%, -50%) rotate(-225deg);
-                    top: 50%;
-                  }
-              }
-            
-              .nav-links {
-                position: absolute;
-                display: flex;
-                flex-direction: column;
-                top: 55px;
-                right: -120%;
-                height: 290px;
-                width: 100%;
-                transition: right .5s;
-                background: $sec-bg2;
-                color: $sec-bg5;
-                box-shadow: 2px 1px 2px $sec-bg5;
-                text-align: center;
-                border-radius: 0 0 10px 10px;
-                z-index: 0;
-                &.active {
-                  right: 0;
-                }
-                a {
-                    padding: 10px 0;
-                    font-size: 14px;
-                    margin-bottom: 10px;
-                    &:nth-child(1){
-                        margin-top: 25px;
-                  }
-                  &:hover{
-                    color: $sec-bg !important;
-                  }
-              }
+  header {
+    .header-container {
+      .logo {
+        a {
+          font-size: 30px;
         }
+      }
+      .hamburger-menu {
+        display: block;
+        height: 40px;
+        width: 50px;
+        position: relative;
+        cursor: pointer;
+        padding: 1rem;
+        z-index: 2;
+        .ham-bar {
+          width: 71%;
+          height: 4px;
+          background-color: $btn-bg;
+          border-radius: 25px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          transition: transform 0.6s, opacity 0.8s, top 0.6s;
+        }
+        .bar-top {
+          top: 25%;
+        }
+
+        .bar-bottom {
+          top: 75%;
+        }
+        &.active .bar-top {
+          transform: translate(-50%, -50%) rotate(-315deg);
+          top: 50%;
+        }
+        &.active .bar-mid {
+          opacity: 0;
+        }
+        &.active .bar-bottom {
+          transform: translate(-50%, -50%) rotate(-225deg);
+          top: 50%;
+        }
+      }
+
+      .nav-links {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 55px;
+        right: -120%;
+        height: 290px;
+        width: 100%;
+        transition: right 0.5s;
+        background: $sec-bg2;
+        color: $sec-bg5;
+        box-shadow: 2px 1px 2px $sec-bg5;
+        text-align: center;
+        border-radius: 0 0 10px 10px;
+        z-index: 0;
+        &.active {
+          right: 0;
+        }
+        a {
+          padding: 10px 0;
+          font-size: 14px;
+          margin-bottom: 10px;
+          &:nth-child(1) {
+            margin-top: 25px;
+          }
+          &:hover {
+            color: $sec-bg !important;
+          }
+        }
+      }
     }
-}
+  }
   .hero-sec {
     flex-direction: column;
     align-items: center;
@@ -716,7 +716,7 @@ footer {
 
   .project {
     .project-container {
-        margin-bottom: 0;
+      margin-bottom: 0;
       flex-direction: column;
       .project-col {
         width: 100%;
@@ -740,25 +740,24 @@ footer {
     }
   }
 
-  footer{
-        .rights{
-            font-size: 16px;
-            letter-spacing: 0;
+  footer {
+    .rights {
+      font-size: 16px;
+      letter-spacing: 0;
+    }
+
+    .socials {
+      a {
+        padding: 0 5px;
+        .fa {
+          font-size: 18px;
         }
-
-        .socials{
-            a{
-                padding: 0 5px;
-                .fa{
-                    font-size: 18px;
-                }
-            }
-        }
-}
+      }
+    }
+  }
 }
 
-
-@media screen and (max-width: 400px){
+@media screen and (max-width: 400px) {
   footer {
     flex-direction: column;
     .rights {
@@ -766,7 +765,7 @@ footer {
       letter-spacing: 1px;
       margin-bottom: 10px;
     }
-  
+
     .socials {
       a {
         padding: 0 15px;
