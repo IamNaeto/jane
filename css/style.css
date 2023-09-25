@@ -636,7 +636,7 @@ footer .socials a .fa:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 40px;
+    margin-bottom: 20px;
   }
   .about {
     flex-direction: column;
