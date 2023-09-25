@@ -87,12 +87,12 @@ header .header-container .hamburger-menu {
 .hero-sec .hero-img {
   width: 45%;
   border-radius: 10px;
-  height: 600px;
+  height: 550px;
 }
 .hero-sec .hero-img img {
   width: 100%;
   border-radius: 10px;
-  height: 600px;
+  height: 550px;
 }
 .hero-sec .info {
   width: 50%;
@@ -623,12 +623,12 @@ footer .socials a .fa:hover {
   }
   .hero-sec .hero-img {
     width: 100%;
-    height: 500px;
+    height: 450px;
     margin-top: 20px;
   }
   .hero-sec .hero-img img {
     width: 100%;
-    height: 500px;
+    height: 450px;
   }
   .hero-sec .info {
     width: 100%;
