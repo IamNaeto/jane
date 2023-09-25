@@ -1,5 +1,5 @@
 ﻿# Janefolio
-- A yet responsive, but dynamic, and interactive portfolio website.
+- A fully responsive, dynamic, and interactive portfolio website.
     
     - Live Link :: [Go Live](https://iamnaeto.github.io/janefolio/)
     
